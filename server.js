@@ -12,7 +12,7 @@ app.use(express.json());
 app.use(express.static("public"));
 
 mongoose
-  .connect("mongodb://127.0.0.1:27017/retailDB")
+  .mongoose.connect(process.env.MONGO_URI || "mongodb://127.0.0.1:27017/retailDB")
   .then(() => console.log("MongoDB connected"))
   .catch((err) => console.error("MongoDB connection error:", err.message));
 
