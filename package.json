@@ -1,0 +1,16 @@
+{
+  "name": "retail-shop-analyzer",
+  "version": "1.0.0",
+  "description": "Upload retail shop datasets and analyze them with MongoDB aggregations",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "csvtojson": "^2.0.10",
+    "express": "^4.21.2",
+    "mongoose": "^8.13.2",
+    "multer": "^1.4.5-lts.1",
+    "xlsx": "^0.18.5"
+  }
+}
